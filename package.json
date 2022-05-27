@@ -1,11 +1,14 @@
 {
+  "homepage": "https://tarun954.github.com.io/nodeproject",
   "name": "nodeproject",
   "version": "1.0.0",
   "description": "Crud application using node,MongoDb and express",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy":"npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "Tharun",
   "license": "ISC",
